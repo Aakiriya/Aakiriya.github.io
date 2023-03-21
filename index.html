@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Personal Portfolio Website - Easy tutorials</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/214f20dfbf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <img src="images/logo.png" class="logo"> <!-- ----NO logo img---- -->
+    
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                 <!-- ----menu---- -->
+                 <li><a href="#header">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#services">Current Projects</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+             <!-- ----intro text---- -->
+             <p>Student/Computer Science</p>
+             <h1>Hi, I'm <span>Gabriel I. Alonso</span><br>from El Paso</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----about---- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                 <h1 class="sub-title ">About Me</h1>
+                 <p align="justify">Welcome to my webpage! My name is Gabriel Isaac Alonso Serrato, and I am currently pursuing a degree in Computer Science at UTEP, where I have maintained a 4.0 GPA. With a passion for programming and design, I'm always eager to create cool stuff and explore new technologies.</p>
+                 <br>
+                 <p align="justify">As a budding artist and software developer, I aspire to combine my technical skills with my vivid imagination to create captivating stories and experiences that reach audiences around the world. Whether through interactive applications or traditional media, I am committed to bringing my stories to life and sharing them with others.</p>
+                 <br>
+                 <p align="justify">Thank you for taking the time to learn more about me. Please feel free to explore my website and reach out if you have any questions or opportunities for collaboration!</p>
+                <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                     <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                     <p class="tab-links" onclick="opentab('education')"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                         <li><span>Web Development</span><br>Coding a full-stack web application using HTML/CSS, Javascript, Python, Flask, and Google cloud</li>
+                         <li><span>Game Development</span><br>Designing and Programing video games using the Unity and GDevelop Game Engine</li>
+                         <li><span>Design/Building</span><br>Designing and Building retro video game consoles and mechanincal keyboards as side business</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                         <li><span>2023 - Current</span><br>Google Tech Exange Program: 
+                         <li>•	Having opportunity to work on real-world projects collaborating with Google Engineers</li> 
+                         <li>•	Honing my technical skills and developing my problem-solving abilities while gaining hands-on experience with applied data structures, and software development</li>
+                         <li>•	Gaining valuable experience in a fast-paced, high- pressure environment</li>
+                         </li>
+                         <!--<li><span>2019 - 2021</span><br>here too</li>-->
+                         <!--<li><span>2017 - 2018</span><br>somewhere else</li>-->
+                         <!--<li><span>2016 - 2017</span><br>Intership at somewhere</li>-->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                         <!--<li><span>2025</span><br>PhD</li>-->
+                         <li><span>2021-2025</span><br>UTEP: Bachelor of Science in Computer Science / Concentration Software Engineer</li>
+                         <li><span>2018-2021</span><br>Cetys Universidad: High School Bilingual Program</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------services------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Current Projects</h1>
+        <div class="services-list">
+            <div class="s1">
+                <i class="fa-solid fa-code"></i>
+                 <h2>Wiki Application</h2>
+                 <p align="justify">A wiki full-stack web application using HTML/CSS, Javascript, Python, Flask, and Google cloud storage allowing users to create their own wikis to share their interest!</p>
+                 <a href="">Learn more coming soon!</a>
+            </div>
+            <div class="s2">
+                <i class="fa-solid fa-rocket"></i>
+                 <h2>Cat-Knight</h2>
+                 <p align="justify">A 2-D video game developd in GDevelop, where a cat-warrior is on a quest to recover the legendary sword of the feline kingdom, which has been stolen by an evil sorcerer who resides in a distant and dangerous land</p>
+                 <a href="">Learn more coming soon!</a>
+            </div>
+            <div class="s3">
+                <i class="fa-solid fa-gamepad"></i>
+                 <h2>Retro Rev</h2>
+                 <p align="justify">A retro video game console that emulates retro games using Lakka OS optimized to run in Orange Pi 3 inside a custom case </p>
+                 <a href="">Learn more coming soon!</a>
+           </div> 
+    </div>
+</div>
+
+<!-- -------portfolio------- -->
+<div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title ">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>A website portfolio with a changing collection of records that reflects accomplishments, skills, experiences, and attributes!</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Empty Space</h3>
+                    <p>This space will be taken later by one of my current projects!</p>
+                    <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Empty Space</h3>
+                    <p>TThis space will be taken later by one of my current projects!</p>
+                    <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+         <a class="btn">See more (No more works available at this moment)</a>
+    </div>
+</div>
+<!-- -------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>gialonsoser@miners.utep.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i>(915) 777-2744</p>
+                <div class="social-icons">
+                    <!--<a href=""><i class="fa-brands fa-square-facebook"></i></a>-->
+                    <!--<a href=""><i class="fa-brands fa-square-twitter"></i></a>-->
+                    <!--<a href=""><i class="fa-brands fa-square-instagram"></i></a>-->
+                    <a href="https://github.com/gialonso?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gabriel-isaac-alonso-serrato-3b9a8021a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/images/Gabriel Isaac Alonso Serrato Resume Online.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Alonso. Made with <i class="fa-solid fa-heart"></i> by Gabriel I. Alonso</p>
+    </div>
+</div>
+<script>
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+        }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx_C-8EXbcbTSleW-V9Ln_H5HWdZRYf1W0THZaMWe-0MluktqejRatvHa3UQ2vyUDN9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
